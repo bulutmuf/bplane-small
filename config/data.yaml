@@ -1,0 +1,12 @@
+# config/data.yaml
+# Dataset configuration for training
+# 11 classes: 10 specific aircraft + 1 fallback aircraft class
+
+path: ./refined_data  
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 11
+names: ['f16', 'f18', 'f35', 'c130', 'f15', 'j20', 'ef2000', 'rafale', 'a10', 'c2', 'aircraft']

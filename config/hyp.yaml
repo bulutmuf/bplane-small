@@ -1,0 +1,33 @@
+# config/hyp.yaml
+# Hyperparameters for training - H100 Optimized
+
+# Optimizer
+optimizer: AdamW   # optimizer type (SGD, Adam, AdamW)
+lr0: 0.002         # H100: increased for larger batch (0.001 -> 0.002)
+lrf: 0.01          # final learning rate (lr0 * lrf)
+momentum: 0.937    # SGD momentum/Adam beta1
+weight_decay: 0.0005  # optimizer weight decay
+warmup_epochs: 3.0    # warmup epochs (fractions ok)
+warmup_momentum: 0.8  # warmup initial momentum
+
+# Loss Gains (Precision Focused)
+box: 10.0          # increased: precise bounding box coordinates
+cls: 1.0           # increased: never confuse F-16 vs F-35
+dfl: 2.0           # increased: sharper edge learning (wingtips, nose)
+label_smoothing: 0.1  # increased: tolerate small label noise
+
+# Augmentation (Weather & Night Conditions)
+hsv_h: 0.015       # HSV-Hue augmentation (fraction)
+hsv_s: 0.8         # increased: better fog/haze performance
+hsv_v: 0.6         # increased: night and flare conditions
+degrees: 15.0      # image rotation (+/- degrees)
+translate: 0.1     # image translation (+/- fraction)
+scale: 0.6         # increased: detect aircraft near and far
+shear: 2.0         # NEW: simulate aircraft roll maneuvers
+perspective: 0.0001  # slight perspective change
+flipud: 0.0        # image flip up-down (probability)
+fliplr: 0.5        # image flip left-right (probability)
+mosaic: 1.0        # essential: catch small aircraft
+mixup: 0.2         # increased: overlapping/cloud-covered aircraft
+copy_paste: 0.1    # NEW: paste aircraft on different backgrounds
+

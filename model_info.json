@@ -1,0 +1,9 @@
+{
+    "project_name": "bplane_small",
+    "classes": [
+        "f16", "f18", "f35", "c130", "f15", 
+        "j20", "ef2000", "rafale", "a10", "c2", "aircraft"
+    ],
+    "provider": "Kaggle",
+    "description": "Aircraft detection model trained on 10 different aircraft types including military and commercial planes"
+}
