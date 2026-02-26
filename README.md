@@ -45,7 +45,7 @@ The dataset is exclusively comprised of military aviation assets:
 - **Airlift & Utility:** C-130, C-2
 - **General Category:** Military Aircraft (Fallback for unspecified models)
 
-###Future Development Objectives
-**​Dataset Augmentation:** Expanding F-16 training samples from ventral and dorsal perspectives to reduce background misclassification.
-​**Architecture Scaling:** Evaluation of Medium-sized YOLO variants for enhanced feature extraction in dense environments.
-**​Signature Optimization:** Refining silhouette discrimination between similar delta-wing configurations.
+### Future Development Objectives
+- **​Dataset Augmentation:** Expanding F-16 training samples from ventral and dorsal perspectives to reduce background misclassification.
+​- **Architecture Scaling:** Evaluation of Medium-sized YOLO variants for enhanced feature extraction in dense environments.
+- **​Signature Optimization:** Refining silhouette discrimination between similar delta-wing configurations.
