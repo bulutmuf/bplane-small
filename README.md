@@ -74,7 +74,8 @@ I am a 15-year-old **Backend Developer** with a passion for building efficient s
 
 By curating high-quality datasets from **Kaggle** and **Roboflow** and focusing on rapid hyperparameter tuning, I was able to stabilize the model at **0.805 mAP50** over a single weekend. While I utilized AI to help structure this professional documentation, the entire technical execution—from data merging to training and optimization—is a result of my personal initiative. This project serves as a "Proof of Work" for my ability to rapidly adapt to new domains and deliver high-performance results under tight constraints.
 
-**Feel free to reach out for collaboration or inquiries via the icons below:**
+**Feel free to reach out for collaboration or inquiries via the icons or email below:**
+- **Email:** bulutmuf@criai.art
 
 <p align="left">
   <a href="https://discord.gg/criai" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="bulutdiscord" height="30" width="40" /></a>
