@@ -1,7 +1,7 @@
 <h1>Model: bplane-small</h1>
 <p>Technical Documentation for Military Aircraft Detection and Classification</p>
 
-![bplane-small-gif](assets/bplane_demo.gif)
+<img src="assets/bplane_demo.gif" alt="bplane-small demo" width="100%">
 
 <h3>Operational Demonstration</h3>
 <p>The following sequence illustrates the model's performance in high-dynamic environments and complex aerial maneuvers.</p>
