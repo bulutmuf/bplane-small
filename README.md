@@ -25,7 +25,7 @@ The system supports fine-grained airframe classification across multiple fighter
 platforms, while retaining a general *Military Aircraft* fallback class for ambiguous or
 previously unseen silhouettes.
 
----
+
 
 ## Technical Specifications
 - **Model Architecture:** YOLO (Small variant)
@@ -33,7 +33,7 @@ previously unseen silhouettes.
 - **Operational Resolution:** 1024×1024 (dynamic inference supported)
 - **Deployment Formats:** PyTorch (`.pt`), ONNX (`.onnx`)
 
----
+
 
 ## Validation Predictions
 The following samples illustrate raw validation outputs produced directly by the YOLO
@@ -42,7 +42,6 @@ post-processing or manual filtering.
 
 <img src="assets/val_batch0_pred.jpg" width="100%">
 
----
 
 ## Ground Truth Label Visualization
 The images below show annotated validation samples with ground truth bounding boxes.
@@ -54,7 +53,7 @@ across different aircraft classes.
   <img src="assets/val_batch1_labels.jpg" width="49%">
 </p>
 
----
+
 
 ## Dataset Composition & Label Statistics
 The following figure summarizes class frequency and bounding box distributions generated
@@ -66,7 +65,6 @@ which directly influence classification stability.
 > Notably, fighter-class aircraft exhibit significant scale and aspect-ratio variance,
 > reinforcing the need for robust multi-scale feature extraction.
 
----
 
 ## Statistical Analysis & Performance
 Overall performance indicates strong reliability for transport and utility aircraft, as well
@@ -77,7 +75,6 @@ canonical viewpoints.
 ### Normalized Confusion Matrix
 <img src="assets/confusion_matrix_normalized.png" alt="Confusion Matrix" width="100%">
 
----
 
 ### F-16 Detection Case Study
 Among all classes, the F-16 exhibits the highest variability in detection confidence. This
@@ -92,7 +89,6 @@ aggressive roll angles.
 - **Cross-Model Confusion:**  
   Minor overlap with F-18 (6%) and Rafale (4%)
 
----
 
 ## Training Progress & Metric Stabilization
 Training metrics demonstrate stable convergence across localization, classification, and
@@ -105,7 +101,6 @@ validation set.
 ### Precision–Recall (PR) Curve
 <img src="assets/BoxPR_curve.png" alt="Precision-Recall Curve" width="100%">
 
----
 
 ## Target Classification List
 The dataset is composed exclusively of military aviation assets and includes the following
@@ -117,7 +112,7 @@ target categories:
 - **General Category:** Military Aircraft  
   *(Fallback class for unspecified or ambiguous platforms)*
 
----
+
 
 ## Future Development Objectives
 - **Dataset Augmentation:**  
