@@ -17,6 +17,10 @@ BPlane-Small-v1 is a computer vision framework built upon the YOLO architecture,
 - **Operational Resolution:** 1024x1024 (Dynamic inference supported)
 - **Deployment Formats:** PyTorch (.pt), ONNX (.onnx) runtime
 
+### Validation Predictions
+
+<img src="assets/val_batch0_pred.jpg" width="100%">
+
 ### Statistical Analysis & Performance
 The model demonstrates high reliability in detecting transport and utility aircraft, as well as distinct air superiority fighters like the F-15 and F-35. Detailed performance metrics are provided below through the normalized confusion matrix.
 
