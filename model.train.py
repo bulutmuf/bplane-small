@@ -52,27 +52,8 @@ def train():
         **hyp 
     )
 
-    print("\nStarting Exports...")
-    
-
-    model.export(
-        format="onnx",
-        simplify=True,
-        opset=12,
-        imgsz=1024
-    )
-
-
-    model.export(
-        format="engine",
-        device=0,
-        half=True,   
-        imgsz=1024,
-        simplify=True
-    )
-
-    print(f"\nExports completed. Models saved in: {os.path.join(project_dir, model_name, 'weights')}")
     print("Pipeline completed successfully.")
 
 if __name__ == "__main__":
+
     train()
