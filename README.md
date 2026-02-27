@@ -10,6 +10,14 @@ The demonstration above highlights the model’s behavior under rapid viewpoint 
 ### Project Overview
 BPlane-Small-v1 is a computer vision framework built on the YOLO architecture, optimized for the detection and classification of military aircraft in unconstrained environments. The model is designed to operate on real surveillance-style imagery, where scale variation, motion blur, and non-ideal viewing angles are common. The system supports fine-grained airframe classification across multiple fighter and support platforms, while retaining a general Military Aircraft fallback class for ambiguous or previously unseen silhouettes.
 
+### Technical Demonstration
+
+This technical demonstration showcases the operational performance of the **bplane-small-v1** model, a specialized computer vision architecture optimized for real-time detection and classification of military aircraft. The inference process utilizes the **BotSORT** tracking algorithm to maintain spatial consistency and identity persistence across high-speed maneuvers and complex aerial backgrounds. Quantitative evaluation on diverse real-world footage yields a **mAP@50 of 0.805**, reflecting the model's reliability in unconstrained environments outside of the training distribution. Processing was conducted at a native resolution of 1024×1024 to preserve critical structural features during rapid aircraft orientation changes.
+
+All raw visual assets are credited to the original creator, **AirshowStuffVideos**. The source footage used for this validation can be accessed at **"10 Minutes of FIGHTER JETS! Part 2!"**. The comprehensive technical documentation, model weights, and systematic validation protocol are hosted on the official GitHub repository at [github.com/bulutmuf/bplane-small](https://github.com/bulutmuf/bplane-small). This project is intended for **research and educational purposes** in aerospace computer vision.
+
+[![Watch Demo](https://img.youtube.com/vi/l_RRto9YeX8/0.jpg)](https://www.youtube.com/watch?v=l_RRto9YeX8&t=0s)
+
 ### Technical Specifications
 The BPlane-Small-v1 architecture utilizes a specialized YOLO backbone optimized for high-frequency aerial inference. Operating at a native resolution of 1024×1024 with support for dynamic inference, the model achieves a peak mAP@50 of 0.805. This balance of speed and precision is tailored for hardware-constrained environments, delivering robust localization accuracy. The system is exported in both PyTorch (.pt) and ONNX (.onnx) formats to ensure seamless integration across edge computing and cloud-based deployment pipelines.
 
