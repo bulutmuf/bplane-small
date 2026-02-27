@@ -46,6 +46,38 @@ The following figure summarizes class frequency and bounding box distributions g
 
 > Notably, fighter-class aircraft exhibit significant scale and aspect-ratio variance, reinforcing the need for robust multi-scale feature extraction.
 
+### Dataset Statistics (Quantitative)
+
+The dataset consists of **11,006 images** with a total of **19,754 annotated aircraft instances**, resulting in an average of **1.79 objects per image**.
+
+#### Split Configuration
+
+| Split | Images | Ratio |
+|-------|--------|-------|
+| Train | 7,700  | 70%   |
+| Validation | 2,197 | 20% |
+| Test | 1,109 | 10% |
+| **Total** | **11,006** | **100%** |
+
+#### Class Distribution 
+
+| Class | Instances | % of Total |
+|-------|-----------|------------|
+| f16 | 2,692 | 13.63% |
+| f18 | 2,236 | 11.32% |
+| f35 | 1,905 | 9.64% |
+| f15 | 1,948 | 9.86% |
+| c130 | 1,771 | 8.97% |
+| j20 | 913 | 4.62% |
+| ef2000 | 1,042 | 5.27% |
+| rafale | 1,010 | 5.11% |
+| a10 | 930 | 4.71% |
+| c2 | 846 | 4.28% |
+| aircraft (fallback) | 4,461 | 22.57% |
+| **Total** | **19,754** | **100%** |
+
+The fallback **aircraft** class intentionally absorbs ambiguous silhouettes to reduce cross-class misclassification between visually similar fighter platforms.
+
 ### Statistical Analysis & Performance
 Overall performance indicates strong reliability for transport and utility aircraft, as well as clear differentiation between most air superiority fighters. Misclassifications tend to occur under extreme maneuvering or when aircraft silhouettes deviate significantly from canonical viewpoints.
 
