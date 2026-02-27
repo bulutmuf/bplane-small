@@ -111,6 +111,77 @@ The dataset is composed exclusively of military aviation assets and includes the
 ### Future Development Objectives
 To further enhance operational reliability, future updates will focus on expanding F-16 samples from ventral and dorsal viewpoints to mitigate background-induced misclassification. Additionally, architecture scaling to medium-sized YOLO variants is being evaluated to improve feature separation in dense or cluttered scenes, alongside refined silhouette discrimination for delta-wing configurations.
 
+### Quick Start with bmodels
+You can run inference with bplane-small-v1 immediately using the [bmodels](https://github.com/bulutmuf/bmodels) Python library. It handles model downloading, GPU optimization, and temporal smoothing automatically.
+
+```bash
+pip install bmodels
+```
+
+#### 1. Basic Usage
+By default, the library optimizes for your hardware to provide the best possible detection quality.
+
+```python
+from bmodels import Load, process_video
+
+# Automatically downloads and loads bplane-small-v1
+model = Load("bplane-small-v1")
+
+# Standard inference with automatic optimization
+process_video(model, "input.mp4", "output.mp4")
+```
+#### 2. Real-Time Performance
+For scenarios requiring maximum FPS (e.g., 50+ FPS on Tesla T4), you can manually tune inference parameters.
+
+```python
+# Optimized for real-time performance by skipping frames and reducing resolution
+process_video(
+    model, 
+    "input.mp4", 
+    "output.mp4", 
+    imgsz=320, 
+    skip_frames=1, 
+    tracker="bytetrack"
+)
+```
+
+#### 3. Image Processing
+
+```python
+from bmodels import process_image
+
+# Detect and render detections on a single image
+rendered, detections = process_image(model, "aircraft.jpg", "output.jpg")
+```
+
+> **Hardware Note:** The library automatically detects your GPU type. If you are using an integrated or entry-level office GPU, the system may prioritize speed over detection quality by lowering the internal resolution. You can override these defaults by manually specifying imgsz and conf parameters.
+
+#### 4. Manual Processing
+If you want to handle the rendering process manually or use detection data for other purposes, you can use the detection and drawing functions separately.
+
+```python
+from bmodels import detect_image, draw_detections
+
+# Perform detection only
+image, detection, class_names = detect_image(model, "aircraft.jpg")
+
+# Perform custom rendering with your own parameters
+rendered = draw_detections(
+    image,
+    detection.boxes,
+    detection.scores,
+    detection.class_ids,
+    track_ids=None,
+    class_names=class_names,
+    box_color=(0, 255, 0),  # Green boxes
+    box_thickness=2
+)
+```
+### Advanced Configuration
+For full technical documentation, benchmarking tools, and custom export modes (JSON, CSV, Bytes), please visit the official [bmodels](https://github.com/bulutmuf/bmodels) repository.
+
+---
+
 ### License & Attribution
 This project is licensed under the **Apache License 2.0**. It is developed using the **Ultralytics YOLOv11** framework, which is subject to the **AGPL-3.0 License**. While the specific model weights and documentation provided in this repository are open for use under the terms of Apache 2.0, any commercial deployment or redistribution involving the underlying framework must comply with Ultralytics' licensing requirements. 
 
