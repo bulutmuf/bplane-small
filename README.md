@@ -111,6 +111,11 @@ The dataset is composed exclusively of military aviation assets and includes the
 ### Future Development Objectives
 To further enhance operational reliability, future updates will focus on expanding F-16 samples from ventral and dorsal viewpoints to mitigate background-induced misclassification. Additionally, architecture scaling to medium-sized YOLO variants is being evaluated to improve feature separation in dense or cluttered scenes, alongside refined silhouette discrimination for delta-wing configurations.
 
+### License & Attribution
+This project is licensed under the **Apache License 2.0**. It is developed using the **Ultralytics YOLOv11** framework, which is subject to the **AGPL-3.0 License**. While the specific model weights and documentation provided in this repository are open for use under the terms of Apache 2.0, any commercial deployment or redistribution involving the underlying framework must comply with Ultralytics' licensing requirements. 
+
+Copyright © 2026 Bulut M.
+
 ---
 
 ### About the Developer
