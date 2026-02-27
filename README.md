@@ -13,6 +13,19 @@ BPlane-Small-v1 is a computer vision framework built on the YOLO architecture, o
 ### Technical Specifications
 The BPlane-Small-v1 architecture utilizes a specialized YOLO backbone optimized for high-frequency aerial inference. Operating at a native resolution of 1024×1024 with support for dynamic inference, the model achieves a peak mAP@50 of 0.805. This balance of speed and precision is tailored for hardware-constrained environments, delivering robust localization accuracy. The system is exported in both PyTorch (.pt) and ONNX (.onnx) formats to ensure seamless integration across edge computing and cloud-based deployment pipelines.
 
+| Category | Parameter | Specification / Result |
+| :--- | :--- | :--- |
+| **Architecture** | Base Framework | YOLOv11s (Small) |
+| **Input** | Native Resolution | 1024 x 1024 px |
+| **Training** | Total Epochs | 100 |
+| **Accuracy** | mAP@50 | 0.805 |
+| **Precision** | mAP@50-95 | 0.657 |
+| **Reliability** | Precision (B) | 0.814 |
+| **Sensitivity** | Recall (B) | 0.701 |
+| **Deployment** | Export Formats | PyTorch (.pt), ONNX (.onnx) |
+
+> **Technical Note on Localization:** The recorded **mAP@50-95 of 0.657** indicates high structural fidelity in bounding box placement. This level of precision is achieved through 1024px native inference, which minimizes feature loss for small-scale silhouettes at long ranges.
+
 ### Training Dynamics & Data Synthesis
 The following training batch illustrates the augmentation strategies used to improve model robustness, including mosaic compositions and color space jittering to simulate varying atmospheric conditions.
 
