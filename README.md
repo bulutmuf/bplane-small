@@ -199,7 +199,7 @@ Copyright © 2026 Bulut M.
 
 ### About the Developer
 
-I am a 15-year-old **Backend Developer** with a passion for building efficient systems. This model was born out of a sudden burst of motivation while I was developing an `npmjs` module; I decided to see how far I could push a lightweight YOLO architecture within a **48-hour sprint**. 
+I am a **Backend Developer** with a passion for building efficient systems. This model was born out of a sudden burst of motivation while I was developing an `npmjs` module; I decided to see how far I could push a lightweight YOLO architecture within a **48-hour sprint**. 
 
 By curating high-quality datasets from **Kaggle** and **Roboflow** and focusing on rapid hyperparameter tuning, I was able to stabilize the model at **0.805 mAP50** over a single weekend. While I utilized AI to help structure this professional documentation, the entire technical execution—from data merging to training and optimization—is a result of my personal initiative. This project serves as a "Proof of Work" for my ability to rapidly adapt to new domains and deliver high-performance results under tight constraints.
 
