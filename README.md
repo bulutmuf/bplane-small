@@ -206,9 +206,4 @@ By curating high-quality datasets from **Kaggle** and **Roboflow** and focusing 
 **Feel free to reach out for collaboration or inquiries via the icons or email below:**
 **Email:** bulutmuf@criai.art
 
-<p align="left">
-  <a href="https://discord.gg/criai" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="bulutdiscord" height="30" width="40" /></a>
-<a href="https://twitter.com/bulutdevs" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="bulutdevs" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/bulutmuftuoglu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bulutmuftuoglu" height="30" width="40" /></a>
-<a href="https://instagram.com/bulutmuf" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="bulutdevs" height="30" width="40" /></a>
-</p>
+
