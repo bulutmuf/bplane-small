@@ -16,8 +16,6 @@ This technical demonstration showcases the operational performance of the **bpla
 
 All raw visual assets are credited to the original creator, **AirshowStuffVideos**. The source footage used for this validation can be accessed at **"10 Minutes of FIGHTER JETS! Part 2!"**. The comprehensive technical documentation, model weights, and systematic validation protocol are hosted on the official GitHub repository at [github.com/bulutmuf/bplane-small](https://github.com/bulutmuf/bplane-small). This project is intended for **research and educational purposes** in aerospace computer vision.
 
-[![Watch Demo](https://img.youtube.com/vi/l_RRto9YeX8/0.jpg)](https://www.youtube.com/watch?v=l_RRto9YeX8&t=0s)
-
 ### Technical Specifications
 The BPlane-Small-v1 architecture utilizes a specialized YOLO backbone optimized for high-frequency aerial inference. Operating at a native resolution of 1024×1024 with support for dynamic inference, the model achieves a peak mAP@50 of 0.805. This balance of speed and precision is tailored for hardware-constrained environments, delivering robust localization accuracy. The system is exported in both PyTorch (.pt) and ONNX (.onnx) formats to ensure seamless integration across edge computing and cloud-based deployment pipelines.
 
